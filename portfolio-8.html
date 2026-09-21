@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <title>Lorem Portfolio | Project 1</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container nav-wrap">
+        <h1 class="logo">
+          <a href="index.html" aria-label="Inicio">
+            <img src="img/logo.png" alt="Nativa">
+          </a>
+        </h1>
+        <ul id="main-nav" class="txt-btn">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li class="dropdown">
+            <a href="#productos" aria-label="Productos">Productos <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Té Vital</a></li>
+              <li><a href="#">Infusión Calmante</a></li>
+              <li><a href="#">Miel Herbal</a></li>
+              <li><a href="#">Blend Detox</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contáctanos</a></li>
+          <li><a href="comprar.html" class="nav-cta" aria-label="Quiero mi producto"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <section class="single-project product-detail">
+    <div class="product-detail__wrap">
+      <div class="product-detail__media">
+        <div class="product-detail__circle">
+          <img src="img/productos/producto8.jpg" alt="Maní del Bosque">
+        </div>
+      </div>
+
+      <div class="product-detail__info">
+        <div class="product-detail__title">Maní del Bosque</div>
+
+        <p class="product-detail__components">
+          <strong>COMPONENTES:</strong> Maní, almendras, frutos secos y semillas seleccionadas.
+        </p>
+
+        <p>
+          Una mezcla crujiente y llena de sabor que combina maní, almendras y otros ingredientes naturales. Ideal para disfrutar entre comidas y aportar energía en cada momento del día.
+        </p>
+
+        <div class="product-detail__purchase">
+          <div class="product-detail__price">Precio: <span>$12.000</span></div>
+
+          <div class="product-detail__actions">
+            <div class="quantity-picker" aria-label="Cantidad del producto">
+              <button type="button" class="qty-btn" data-action="decrease" aria-label="Disminuir cantidad">-</button>
+              <input type="number" value="1" min="1" max="99" aria-label="Cantidad">
+              <button type="button" class="qty-btn" data-action="increase" aria-label="Aumentar cantidad">+</button>
+            </div>
+
+            <button type="button" class="add-cart-btn product-detail__cart">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <footer id="main-footer">
+    <div class="container">
+      <p class="small">Copyright © 2026 Nativa – Todos los derechos reservados | Políticas de tratamiento de datos | Desarrollado por Nativa</p>
+      <ul>
+        <li><a href="#" style="color: #285943;"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" style="color: #285943;"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" style="color: #285943;"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

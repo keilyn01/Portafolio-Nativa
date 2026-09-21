@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <title>Nativa</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container nav-wrap">
+        <h1 class="logo">
+          <a href="index.html" aria-label="Inicio">
+            <img src="img/logo.png" alt="Nativa">
+          </a>
+        </h1>
+        <ul id="main-nav" class="txt-btn">
+          <li><a class="current" href="#inicio">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li class="dropdown">
+            <a href="#productos" aria-label="Productos">Productos <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="lineavital.html">Línea Vital</a></li>
+              <li><a href="lineaverano.html">Línea Verano</a></li>
+              <li><a href="lineaotoño.html">Línea Otoño</a></li>
+              <li><a href="lineapasion.html">Línea Pasión</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contáctanos</a></li>
+          <li><a href="comprar.html" class="nav-cta" aria-label="Quiero mi producto"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="showcase-home" class="carousel">
+      <div class="slides">
+        <div class="slide">
+          <img src="img/novedad1.jpg" alt="Té Vital">
+          <div class="hero-callout">
+            <a href="portfolio-1.html" class="hero-btn">Conocer</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/novedad2.jpg" alt="Rubor Rose">
+          <div class="hero-callout">
+            <a href="portfolio-4.html" class="hero-btn">Conocer</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/novedad3.jpg" alt="Línea Verano">
+          <div class="hero-callout">
+            <a href="lineaverano.html" class="hero-btn">Conocer</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/novedad4.jpg" alt="Vela Otoño">
+          <div class="hero-callout">
+            <a href="portfolio-9.html" class="hero-btn">Conocer</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/novedad5.jpg" alt="Granola Nativa">
+          <div class="hero-callout">
+            <a href="portfolio-2.html" class="hero-btn">Conocer</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button type="button" class="prev" aria-label="Anterior">&#10094;</button>
+        <button type="button" class="next" aria-label="Siguiente">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="carousel-dots" aria-label="Indicadores del carrusel">
+      <button type="button" class="dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button type="button" class="dot" data-slide="1" aria-label="Slide 2"></button>
+      <button type="button" class="dot" data-slide="2" aria-label="Slide 3"></button>
+      <button type="button" class="dot" data-slide="3" aria-label="Slide 4"></button>
+      <button type="button" class="dot" data-slide="4" aria-label="Slide 5"></button>
+    </div>
+  </header>
+
+  <section id="portfolio" style="padding-top: 2.5rem;">
+    <div class="container">
+      <h1 class="portfolio-title" style="margin-top: 0;">NUESTROS PRODUCTOS</h1>
+      <div class="portfolio-nav">
+        <ul class="txt-btn">
+          <li><a href="#" class="is-active" data-filter="all">Todo</a></li>
+          <li><a href="#" data-filter="snacks">Snacks</a></li>
+          <li><a href="#" data-filter="relajacion">Relajación</a></li>
+          <li><a href="#" data-filter="cuidado-personal">Cuidado personal</a></li>
+          <li><a href="#" data-filter="cosmeticos">Cosméticos</a></li>
+        </ul>
+      </div>
+
+      <div class="portfolio-content">
+        <div class="box">
+          <article class="product-card has-discount">
+            <div class="product-topline">
+              <span class="discount-badge">4u al 50%</span>
+            </div>
+            <a href="portfolio-1.html" class="product-image">
+              <img src="img/productos/tevital.jpg" alt="Té Vital">
+            </a>
+            <div class="product-info">
+              <h3>Té Vital</h3>
+              <div class="product-pricing">
+                <span class="old-price">$13.500</span>
+                <span class="new-price">$9.200</span>
+                <span class="discount-pill">-20%</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-2.html" class="product-image">
+              <img src="img/productos/granolanativa.jpg" alt="Granola Nativa">
+            </a>
+            <div class="product-info">
+              <h3>Granola Nativa</h3>
+              <div class="product-pricing">
+                <span class="new-price">$4.500</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card has-discount">
+            <div class="product-topline">
+              <span class="discount-badge">4u al 50%</span>
+            </div>
+            <a href="portfolio-3.html" class="product-image">
+              <img src="img/productos/brisafloral.jpg" alt="Brisa Floral">
+            </a>
+            <div class="product-info">
+              <h3>Brisa Floral</h3>
+              <div class="product-pricing">
+                <span class="old-price">$62.000</span>
+                <span class="new-price">$45.000</span>
+                <span class="discount-pill">-20%</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card has-discount">
+            <div class="product-topline">
+              <span class="discount-badge">4u al 50%</span>
+            </div>
+            <a href="portfolio-4.html" class="product-image">
+              <img src="img/productos/ruborrose.jpg" alt="Rubor Rose">
+            </a>
+            <div class="product-info">
+              <h3>Rubor Rose</h3>
+              <div class="product-pricing">
+                <span class="old-price">$31.000</span>
+                <span class="new-price">$20.000</span>
+                <span class="discount-pill">-20%</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-5.html" class="product-image">
+              <img src="img/productos/aceitedorado.jpg" alt="Aceite Dorado">
+            </a>
+            <div class="product-info">
+              <h3>Aceite Dorado</h3>
+              <div class="product-pricing">
+                <span class="new-price">$25.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">500 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card" data-category="cuidado-personal">
+            <a href="portfolio-6.html" class="product-image">
+              <img src="img/productos/shampoofrescura.jpg" alt="Shampoo Frescura">
+            </a>
+            <div class="product-info">
+              <h3>Shampoo Frescura</h3>
+              <div class="product-pricing">
+                <span class="new-price">$23.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-7.html" class="product-image">
+              <img src="img/productos/infusionrelax.jpg" alt="Infusión Relax">
+            </a>
+            <div class="product-info">
+              <h3>Infusión Relax</h3>
+              <div class="product-pricing">
+                <span class="new-price">$10.500</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-8.html" class="product-image">
+              <img src="img/productos/manidelbosque.jpg" alt="Maní del Bosque">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.3</span></div>
+              <h3>Maní del Bosque</h3>
+              <div class="product-pricing">
+                <span class="new-price">$12.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-9.html" class="product-image">
+              <img src="img/productos/velaotoño.jpg" alt="Vela Otoño">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.9</span></div>
+              <h3>Vela Otoño</h3>
+              <div class="product-pricing">
+                <span class="new-price">$20.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-10.html" class="product-image">
+              <img src="img/productos/galletasvitales.jpg" alt="Galletas Vitales">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.1</span></div>
+              <h3>Galletas Vitales</h3>
+              <div class="product-pricing">
+                <span class="new-price">$9.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-11.html" class="product-image">
+              <img src="img/productos/mielmontaña.jpg" alt="Miel de Montaña">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.7</span></div>
+              <h3>Miel de Montaña</h3>
+              <div class="product-pricing">
+                <span class="new-price">$18.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-12.html" class="product-image">
+              <img src="img/productos/serumaurora.jpg" alt="Serum Aurora">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.8</span></div>
+              <h3>Serum Aurora</h3>
+              <div class="product-pricing">
+                <span class="new-price">$30.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">350 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-13.html" class="product-image">
+              <img src="img/productos/solradiante.jpg" alt="Sol Radiante">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.6</span></div>
+              <h3>Sol Radiante</h3>
+              <div class="product-pricing">
+                <span class="new-price">$28.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">300 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card has-discount">
+            <div class="product-topline">
+              <span class="discount-badge">4u al 50%</span>
+            </div>
+            <a href="portfolio-14.html" class="product-image">
+              <img src="img/productos/paletacoral.jpg" alt="Paleta Coral">
+            </a>
+            <div class="product-info">
+              <h3>Paleta Coral</h3>
+              <div class="product-pricing">
+                <span class="old-price">$39.900</span>
+                <span class="new-price">$27.600</span>
+                <span class="discount-pill">-20%</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-15.html" class="product-image">
+              <img src="img/productos/jabonmargarita.jpg" alt="Jabón Margarita">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.2</span></div>
+              <h3>Jabón Margarita</h3>
+              <div class="product-pricing">
+                <span class="new-price">$12.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">200 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-16.html" class="product-image">
+              <img src="img/productos/exfoliantetropical.jpg" alt="Exfoliante Tropical">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.4</span></div>
+              <h3>Exfoliante Tropical</h3>
+              <div class="product-pricing">
+                <span class="new-price">$17.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">200 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-17.html" class="product-image">
+              <img src="img/productos/cremanatur.jpg" alt="Crema Natur">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.7</span></div>
+              <h3>Crema Natur</h3>
+              <div class="product-pricing">
+                <span class="new-price">$32.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-18.html" class="product-image">
+              <img src="img/productos/intenso.jpg" alt="Labial Líquido Intenso">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.7</span></div>
+              <h3>Labial Líquido Intenso</h3>
+              <div class="product-pricing">
+                <span class="new-price">$14.800</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-19.html" class="product-image">
+              <img src="img/productos/encanto.jpg" alt="Tinta Encanto">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.5</span></div>
+              <h3>Tinta Encanto</h3>
+              <div class="product-pricing">
+                <span class="new-price">$11.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-20.html" class="product-image">
+              <img src="img/productos/correctornatural.jpg" alt="Corrector Natural">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.6</span></div>
+              <h3>Corrector Natural</h3>
+              <div class="product-pricing">
+                <span class="new-price">$22.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-21.html" class="product-image">
+              <img src="img/productos/labialpasion.jpg" alt="Labial Pasión">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.7</span></div>
+              <h3>Labial Pasión</h3>
+              <div class="product-pricing">
+                <span class="new-price">$18.000</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">250 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-22.html" class="product-image">
+              <img src="img/productos/mirada.jpg" alt="Lápiz de Ojos Mirada">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.4</span></div>
+              <h3>Lápiz de Ojos Mirada</h3>
+              <div class="product-pricing">
+                <span class="new-price">$10.400</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">150 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <article class="product-card">
+            <a href="portfolio-23.html" class="product-image">
+              <img src="img/productos/definicion.jpg" alt="Lápiz de Cejas Definición">
+            </a>
+            <div class="product-info">
+              <div class="product-rating"><span class="star">★</span> <span>4.5</span></div>
+              <h3>Lápiz de Cejas Definición</h3>
+              <div class="product-pricing">
+                <span class="new-price">$12.900</span>
+              </div>
+              <div class="product-meta">
+                <span class="measure">180 ml</span>
+              </div>
+              <button type="button" class="add-cart-btn">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <footer id="main-footer">
+    <div class="container">
+      <p class="small">Copyright © 2026 Nativa – Todos los derechos reservados | Políticas de tratamiento de datos | Desarrollado por Nativa</p>
+      <!-- <div class="social"> -->
+        <ul>
+          <li><a href="#" style="color: #285943;"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" style="color: #285943;"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" style="color: #285943;"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      <!-- </div> -->
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <title>Nativa | Mi bolsa</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container nav-wrap">
+        <h1 class="logo">
+          <a href="index.html" aria-label="Inicio">
+            <img src="img/logo.png" alt="Nativa">
+          </a>
+        </h1>
+        <ul id="main-nav" class="txt-btn">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li class="dropdown">
+            <a href="#productos" aria-label="Productos">Productos <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="lineavital.html">Línea Vital</a></li>
+              <li><a href="lineaverano.html">Línea Verano</a></li>
+              <li><a href="lineaotoño.html">Línea Otoño</a></li>
+              <li><a href="lineapasion.html">Línea Pasión</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contáctanos</a></li>
+          <li><a href="comprar.html" class="nav-cta current" aria-label="Quiero mi producto"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="cart-page">
+    <div class="cart-page__container">
+      <h1 class="cart-page__title">Mi bolsa de compras</h1>
+
+      <div class="cart-layout">
+        <section class="cart-card" aria-live="polite">
+          <div class="cart-table-header">
+            <span>Producto</span>
+            <span>Cantidad</span>
+            <span>Precio</span>
+            <span></span>
+          </div>
+          <div id="cart-items"></div>
+        </section>
+
+        <aside class="cart-summary">
+          <h2>Resumen de mi compra</h2>
+          <div class="cart-summary__row">
+            <span id="cart-product-count">0 productos</span>
+            <strong id="cart-total-products">$0</strong>
+          </div>
+          <div class="cart-summary__row small">
+            <span>descuentos</span>
+            <strong id="cart-discounts">-$0</strong>
+          </div>
+          <div class="cart-summary__row small">
+            <span>subtotal</span>
+            <strong id="cart-subtotal">$0</strong>
+          </div>
+          <div class="cart-summary__row total">
+            <span>total</span>
+            <strong id="cart-total">$0</strong>
+          </div>
+
+          <button type="button" class="cart-summary__button primary">finalizar compra</button>
+          <button type="button" class="cart-summary__button secondary">seguir comprando</button>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer id="main-footer">
+    <div class="container">
+      <p class="small">Copyright © 2026 Nativa – Todos los derechos reservados | Políticas de tratamiento de datos | Desarrollado por Nativa</p>
+      <ul>
+        <li><a href="#" style="color: #285943;"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" style="color: #285943;"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" style="color: #285943;"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
